@@ -6,6 +6,6 @@
 Закидываем туда файл .php и отправляем запросы уже на него, но с GET параметром.
 
 Выглядит WEBHOOK примерно так:
-https://xxxxx.ru/dis.php?hook=https://discord.com/api/webhooks/xxxxxxx/xxxxxxM
+https://xxxxx.ru/DSRoute.php?hook=https://discord.com/api/webhooks/xxxxxxx/xxxxxxM
 
 т.е. первая чать это адрес до вашего скрипта, а вторая часть после &hook= уже сам вебхук дискорд.

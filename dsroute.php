@@ -1,16 +1,13 @@
-<?php 
+<? 
 header('Access-Control-Allow-Origin: *'); // Разрешаем запросы с любых сайтов
 header('Content-Type: application/json'); // Указываем тип ответа (обычный текст) и кодировку
 
-// Включение логов
 ini_set('error_reporting', E_ALL);
-ini_set('display_errors', 0);
-ini_set('display_startup_errors', 0);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
 
-// Получение тела запроса от вебхука
 $json = file_get_contents('php://input');
 
-// Отправка запроса на вебхук
 $curl = curl_init();
 
 curl_setopt_array($curl, [
@@ -29,5 +26,9 @@ curl_setopt_array($curl, [
 
 $response = curl_exec($curl);
 $err = curl_error($curl);
+
+echo $response;
+echo $err;
+
 
 curl_close($curl);

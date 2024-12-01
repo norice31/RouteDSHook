@@ -1,4 +1,4 @@
-<? 
+<?php
 header('Access-Control-Allow-Origin: *'); // Разрешаем запросы с любых сайтов
 header('Content-Type: application/json'); // Указываем тип ответа (обычный текст) и кодировку
 
